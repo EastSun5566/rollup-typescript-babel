@@ -1,24 +1,16 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "declarationDir": "dist/types",
-    "declaration": true,
     "target": "esnext",
     "module": "esnext",
-    "strict": true
+    "strict": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declarationDir": "dist/types",
+    "declaration": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "lib": ["esnext"],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
