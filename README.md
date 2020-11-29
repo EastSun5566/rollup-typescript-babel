@@ -1,27 +1,27 @@
-# Rollup-TypeScript-Babel
+# Rollup TypeScript Babel library Starter
 
-> This is sample repository demonstrates how to use Rollup, TypeScript and Babel
+> This starter is base on <https://github.com/a-tarasyuk/rollup-typescript-babel>
 
 ## Building the repo
 
-```shell
+```sh
 npm run build
 ```
 
 ## Building only types
 
-```shell
+```sh
 npm run build:types
 ```
 
 ## Type-Checking the repo
 
-```shell
+```sh
 npm run type-check
 ```
 
 And to run in --watch mode:
 
-```shell
+```sh
 npm run type-check:watch
 ```
