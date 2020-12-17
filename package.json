@@ -2,10 +2,13 @@
   "name": "rollup-typescript-babel",
   "version": "1.0.0",
   "description": "A sample setup using Rollup and Babel to build TypeScript code, and using TypeScript for type-checking.",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -29,15 +32,14 @@
   "homepage": "https://github.com/EastSun5566/rollup-typescript-babel",
   "devDependencies": {
     "@babel/core": "7.12.7",
-    "@babel/plugin-proposal-class-properties": "7.12.1",
     "@babel/preset-env": "7.12.7",
     "@babel/preset-typescript": "7.12.7",
     "@rollup/plugin-babel": "5.2.1",
     "@rollup/plugin-commonjs": "16.0.0",
     "@rollup/plugin-node-resolve": "10.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.8.2",
-    "@typescript-eslint/parser": "^4.8.2",
-    "eslint": "^7.14.0",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "eslint": "^7.15.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "rollup": "2.33.3",
